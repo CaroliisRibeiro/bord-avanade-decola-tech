@@ -94,25 +94,6 @@ Cada board criado possui colunas que podem conter cards. Os cards podem ser movi
 
 ## 🧩 Diagrama de Classes
 
-
-
-## 📦 Deploy com Docker + Railway (opcional)
-
-A aplicação possui `Dockerfile` pronto para uso no Railway ou plataformas similares. Certifique-se de que o JAR esteja gerado em `build/libs/`.
-
----
-
-## ✨ Contribuições
-
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests.
-
-## 🧠 Autor
-
-Desenvolvido por **Caroliis Ribeiro** como parte da formação **Decola Tech** e estudos em desenvolvimento backend com Java.
-
-## 🧩 Diagrama de Classes
-
-
 ```mermaid
 classDiagram
     class BoardEntity {
@@ -186,4 +167,11 @@ classDiagram
     BoardMenu --> CardQueryService : uses
     BoardMenu --> BoardQueryService : uses
     BoardMenu --> BoardColumnQueryService : uses
-'''
+
+
+```
+
+
+## 🧠 Autor
+
+Desenvolvido por **Caroliis Ribeiro** como parte da formação **Decola Tech da DIO** e estudos em desenvolvimento backend com Java.
