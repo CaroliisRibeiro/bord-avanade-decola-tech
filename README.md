@@ -1,5 +1,10 @@
 
 # 🗂️ Board Manager - Decola Tech
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/89a91928-5c55-454b-b540-69c10808c12f" width="500"/>
+</p>
+
+
 
 Aplicação Java para gerenciamento de **boards no estilo Kanban**, construída como parte do projeto **Decola Tech** com ênfase em persistência de dados e organização de tarefas.
 
