@@ -1,0 +1,32 @@
+mar. 24, 2025 8:37:18 PM liquibase.command
+INFO: Command execution complete
+liquibase.exception.CommandExecutionException: liquibase.exception.ChangeLogParseException: Error parsing db/changelog/db.changelog-master.yml : Could not find directory or directory was empty for includeAll 'migrations'
+	at liquibase.command.CommandScope.execute(CommandScope.java:236)
+	at liquibase.Liquibase.lambda$update$0(Liquibase.java:223)
+	at liquibase.Scope.lambda$child$0(Scope.java:197)
+	at liquibase.Scope.child(Scope.java:206)
+	at liquibase.Scope.child(Scope.java:196)
+	at liquibase.Scope.child(Scope.java:175)
+	at liquibase.Liquibase.runInScope(Liquibase.java:1361)
+	at liquibase.Liquibase.update(Liquibase.java:215)
+	at liquibase.Liquibase.update(Liquibase.java:197)
+	at liquibase.Liquibase.update(Liquibase.java:183)
+	at liquibase.Liquibase.update(Liquibase.java:161)
+	at br.com.dio.persistence.migration.MigrationStrategy.executeMigration(MigrationStrategy.java:36)
+	at br.com.dio.Main.main(Main.java:14)
+Caused by: liquibase.exception.ChangeLogParseException: Error parsing db/changelog/db.changelog-master.yml : Could not find directory or directory was empty for includeAll 'migrations'
+	at liquibase.parser.core.yaml.YamlChangeLogParser.parse(YamlChangeLogParser.java:94)
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.lambda$getDatabaseChangeLog$0(DatabaseChangelogCommandStep.java:115)
+	at liquibase.Scope.child(Scope.java:206)
+	at liquibase.Scope.child(Scope.java:182)
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.getDatabaseChangeLog(DatabaseChangelogCommandStep.java:114)
+	at liquibase.command.core.helpers.DatabaseChangelogCommandStep.run(DatabaseChangelogCommandStep.java:93)
+	at liquibase.command.CommandScope.execute(CommandScope.java:213)
+	... 12 more
+Caused by: liquibase.exception.SetupException: Could not find directory or directory was empty for includeAll 'migrations'
+	at liquibase.changelog.DatabaseChangeLog.findResources(DatabaseChangeLog.java:758)
+	at liquibase.changelog.DatabaseChangeLog.includeAll(DatabaseChangeLog.java:687)
+	at liquibase.changelog.DatabaseChangeLog.handleChildNode(DatabaseChangeLog.java:496)
+	at liquibase.changelog.DatabaseChangeLog.load(DatabaseChangeLog.java:376)
+	at liquibase.parser.core.yaml.YamlChangeLogParser.parse(YamlChangeLogParser.java:88)
+	... 18 more
