@@ -1,5 +1,6 @@
 package br.com.dio.persistence.dao;
 
+import com.mysql.cj.jdbc.StatementImpl;
 import br.com.dio.dto.CardDetailsDTO;
 import br.com.dio.persistence.entity.CardEntity;
 import java.sql.Statement;

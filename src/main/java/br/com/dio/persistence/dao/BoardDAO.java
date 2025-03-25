@@ -1,5 +1,6 @@
 package br.com.dio.persistence.dao;
 
+import com.mysql.cj.jdbc.StatementImpl;
 import br.com.dio.persistence.entity.BoardEntity;
 import lombok.AllArgsConstructor;
 import java.sql.Statement;

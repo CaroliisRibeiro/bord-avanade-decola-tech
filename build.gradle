@@ -36,13 +36,18 @@ dependencies {
 
     // Banco de Dados
     runtimeOnly 'com.h2database:h2'
-    runtimeOnly 'mysql:mysql-connector-java:8.0.33'
+    //runtimeOnly 'mysql:mysql-connector-java:8.0.33'
+	implementation 'mysql:mysql-connector-java:8.0.33'
+
 
     // Liquibase Runtime (necessário para a task ./gradlew update)
     liquibaseRuntime 'org.liquibase:liquibase-core:4.24.0'
     liquibaseRuntime 'info.picocli:picocli:4.7.5'
     liquibaseRuntime 'org.yaml:snakeyaml:1.33'
     liquibaseRuntime 'mysql:mysql-connector-java:8.0.33'
+	// Para o código Java que usa Liquibase
+	implementation 'org.liquibase:liquibase-core:4.24.0'
+
 
     // Testes
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
